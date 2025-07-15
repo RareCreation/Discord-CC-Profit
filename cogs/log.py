@@ -75,7 +75,8 @@ class LogCog(commands.Cog):
         buffer.seek(0)
 
         file = disnake.File(buffer, filename="log.jpg")
-        await inter.response.send_message(file=file, ephemeral=False)
+        await inter.response.send_message(content="@everyone", file=file, ephemeral=False, allowed_mentions=disnake.AllowedMentions(everyone=True))
+
 
 def setup(bot):
     bot.add_cog(LogCog(bot))
