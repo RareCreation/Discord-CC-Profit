@@ -14,7 +14,7 @@ class LogCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.slash_command(description="Сделать лог с информацией")
+    @commands.slash_command(description="")
     async def log(
             self,
             inter: disnake.ApplicationCommandInteraction,
