@@ -58,7 +58,7 @@ class LogCog(commands.Cog):
 
         draw_centered_text(worker, positions["worker"], 280, main_font, (255, 255, 255))
         draw_centered_text(dobiver, positions["dobiver"], 280, main_font, (255, 255, 255))
-        draw_centered_text(f"{profit}$", 1020, 385, font_profit, (255, 255, 255))
+        draw.text((930, 385), f"{profit}$", font=font_profit, fill=(255, 255, 255))
 
         if wechat:
             draw_centered_text(wechat, positions["wechat"], 280, main_font, (255, 255, 255))
